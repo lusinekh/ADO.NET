@@ -15,7 +15,7 @@ namespace WindowsFormsApplication2
         internal static string GetConnectionString()
         {
             //Util-2 Assume failure.  
-            string returnValue = null;
+           
 
             //Util-3 Look for the name in the connectionStrings section.  
             ConnectionStringSettings settings =
@@ -24,8 +24,7 @@ namespace WindowsFormsApplication2
             //If found, return the connection string.  
             if (settings != null)
                 returnValue = settings.ConnectionString;
-
-            return returnValue;
+                      return returnValue;
         }
     }
 
